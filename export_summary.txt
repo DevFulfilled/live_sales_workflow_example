@@ -1,0 +1,20 @@
+DEVFULFILLED METADATA EXPORT
+============================
+
+Project: 
+Exported By: Richard J Pearce
+Exported At: 2026-09-08 14:29:15
+
+FILES EXPORTED
+==============
+
+application_properties.txt
+script.txt
+sheets.txt
+bookmarks.txt
+master_measures.txt
+master_dimensions.txt
+master_visualisations.txt
+variables.txt
+object_measures.json
+object_dimensions.json
