@@ -1,0 +1,66 @@
+APPLICATION PROPERTIES
+======================
+
+Title: Sales Workflow Example
+Last Reload Time: 2026-09-08T14:19:52.314Z
+Saved In Product Version: 12.2886.0
+
+Additional Properties
+---------------------
+
+_resourcetype: app
+create:
+[
+    {
+        "canCreate": true,
+        "resource": "sheet"
+    },
+    {
+        "canCreate": true,
+        "resource": "bookmark"
+    },
+    {
+        "canCreate": true,
+        "resource": "snapshot"
+    },
+    {
+        "canCreate": true,
+        "resource": "story"
+    },
+    {
+        "canCreate": true,
+        "resource": "dimension"
+    },
+    {
+        "canCreate": true,
+        "resource": "measure"
+    },
+    {
+        "canCreate": true,
+        "resource": "masterobject"
+    },
+    {
+        "canCreate": true,
+        "resource": "sheetgroup"
+    },
+    {
+        "canCreate": true,
+        "resource": "variable"
+    }
+]
+
+createdDate: 2026-09-08T14:21:50.291Z
+description: Simple Dashboard to Demo Development Flow
+encrypted: Yes
+hassectionaccess: No
+id: 88120264-eef2-4c65-bba1-a1d0aef3ad4b
+modifiedDate: 2026-09-08T14:21:50.627Z
+originAppId: 9679140f-4903-444a-b6e4-072ef7325d7b
+owner: auth0|a08D000000d9u66IAA
+ownerId: 67e51c6122ab2f9b5e701b31
+privileges: read, update, delete, reload, export, change_owner, change_space, export_reduced, source, evaluate, manage, publish_source
+publishTime: 2026-09-08T14:21:50.283Z
+published: No
+qUsage: ANALYTICS
+spaceId: 6a2ea62d58a46856e9700cc6
+
