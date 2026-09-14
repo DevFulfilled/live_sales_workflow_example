@@ -23,18 +23,55 @@ SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
 SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
 
 ///$tab Sales
+SET HidePrefix='%';
+
+Sales:
 LOAD
-    SaleID,
-    OrderID,
-    OrderDate,
-    CustomerID,
-    ProductID,
+    SaleID as %SaleID,
+    OrderID as %OrderID,
+    CustomerID as %CustomerID,
+    ProductID as %ProductID,
     Channel,
     Quantity,
     DiscountPct,
     SalesAmount,
     CostAmount,
-    Profit
+    Profit,
+    Date(OrderDate) as OrderDate
 FROM [lib://Data:DataFiles/Qlik_Sales_Test_Data.xlsx]
 (ooxml, embedded labels, table is Sales);
+
+///$tab Dimensions
+Customer:
+LOAD
+    %CustomerID,
+    CustomerName,
+    Segment,
+    City,
+    Region,
+    Country,
+    CustomerSince,
+    Floor((Today(1) - CustomerSince) / 365.25) as CustomerLengthYears;
+LOAD
+    CustomerID as %CustomerID,
+    CustomerName,
+    Segment,
+    City,
+    Region,
+    Country,
+    Date(Date#(CustomerSince, 'YYYY-MM-DD')) as CustomerSince
+FROM [lib://Data:DataFiles/Customers(1).csv]
+(txt, utf8, embedded labels, delimiter is ',', msq);
+
+
+Product:
+LOAD
+    ProductID as %ProductID,
+    ProductName,
+    Category,
+    Subcategory,
+    UnitCost,
+    UnitPrice
+FROM [lib://Data:DataFiles/Products(1).csv]
+(txt, utf8, embedded labels, delimiter is ',', msq);
 
