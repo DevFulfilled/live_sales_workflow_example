@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "dimension_index": 0,
+        "field_defs": [],
+        "field_labels": [],
+        "is_master_item": true,
+        "library_id": "dd0f9b0e-b02e-4e63-becb-a35788190d42",
+        "object_id": "YgWpzjv",
+        "object_title": "",
+        "object_type": "sn-table"
+    }
+]
