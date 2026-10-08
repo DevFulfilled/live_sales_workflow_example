@@ -1,63 +1,23 @@
 MASTER MEASURES
 ===============
 
-Title: Gross Profit
-Label: Gross Profit
-ID: JYByuzq
+Title: Sales Qty
+Label: Sales Qty
+ID: WDCa
 Tags: 
 
 Expression:
-Sum(SalesAmount) - Sum(CostAmount)
+Sum(Quantity)
 
 --------------------------------------------------------------------------------
 
-Title: Total Sales
-Label: Total Sales
-ID: LcynfDa
+Title: Sales Amount
+Label: Sales Amount
+ID: tTNg
 Tags: 
 
 Expression:
 sum(SalesAmount)
-
---------------------------------------------------------------------------------
-
-Title: Gross Margin Percentage
-Label: Gross Margin Percentage
-ID: YQPD
-Tags: 
-
-Expression:
-([Total Sales] - [Total Cost])/ [Total Sales]
-
---------------------------------------------------------------------------------
-
-Title: Total Quantity
-Label: Total Quantity
-ID: agBk
-Tags: 
-
-Expression:
-sum(Quantity)
-
---------------------------------------------------------------------------------
-
-Title: Total Cost
-Label: Total Cost
-ID: bjttf
-Tags: 
-
-Expression:
-sum(CostAmount)
-
---------------------------------------------------------------------------------
-
-Title: Sales Per Customer
-Label: Sales Per Customer
-ID: btvJ
-Tags: 
-
-Expression:
-[Total Sales] / Count(DISTINCT %CustomerID)
 
 --------------------------------------------------------------------------------
 
