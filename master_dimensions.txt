@@ -1,5 +1,33 @@
 MASTER DIMENSIONS
 =================
 
-No master dimensions returned.
+Title: ProductName
+ID: 0fdb7a3b-e8ba-47dc-b17d-b436d755b4bd
+Tags: 
+Grouping: N
+Fields: ProductName
+Labels: ProductName
+Description: 
+
+--------------------------------------------------------------------------------
+
+Title: Country
+ID: HYTSLeF
+Tags: 
+Grouping: N
+Fields: Country
+Labels: Country
+Description: 
+
+--------------------------------------------------------------------------------
+
+Title: Segment
+ID: dd0f9b0e-b02e-4e63-becb-a35788190d42
+Tags: 
+Grouping: N
+Fields: Segment
+Labels: Segment
+Description: 
+
+--------------------------------------------------------------------------------
 
