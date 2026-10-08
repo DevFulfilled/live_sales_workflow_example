@@ -1,5 +1,35 @@
 VARIABLES
 =========
 
-No variables returned.
+Name: vDataPath
+ID: 386259da-c0f6-487c-96f0-66d9d085dccd
+Script Created: Yes
+Definition:
+lib://Data:DataFiles
+
+--------------------------------------------------------------------------------
+
+Name: vCustomersFile
+ID: bc5d60aa-147a-45a2-aa02-9746d24a95a8
+Script Created: Yes
+Definition:
+Customers(1).csv
+
+--------------------------------------------------------------------------------
+
+Name: vProductsFile
+ID: 21bcde20-bffb-4776-b1d7-8ef67dec56b6
+Script Created: Yes
+Definition:
+Products(1).csv
+
+--------------------------------------------------------------------------------
+
+Name: vSalesFile
+ID: 00331153-06ca-447d-b1eb-c4ac735b1301
+Script Created: Yes
+Definition:
+Sales(1).csv
+
+--------------------------------------------------------------------------------
 
