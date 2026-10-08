@@ -32,6 +32,15 @@ SET HidePrefix='%';
 
 
 
+
+
+
+
+
+
+
+///$tab Data
+
 Customers:
 LOAD
     CustomerID as %CustomerID,
@@ -72,4 +81,47 @@ LOAD
     Profit
 FROM [$(vDataPath)/$(vSalesFile)]
 (txt, utf8, embedded labels, delimiter is ',', msq);
+///$tab Calendar
+// Remove any time component from OrderDate
+Sales_Normalised:
+NoConcatenate
+LOAD
+    *,
+    Date(Floor(OrderDate)) AS OrderDate_Calendar
+RESIDENT Sales;
+
+DROP TABLE Sales;
+DROP FIELD OrderDate FROM Sales_Normalised;
+RENAME FIELD OrderDate_Calendar TO OrderDate;
+RENAME TABLE Sales_Normalised TO Sales;
+
+
+// Find the date range
+CalendarRange:
+LOAD
+    Min(OrderDate) AS MinDate,
+    Max(OrderDate) AS MaxDate
+RESIDENT Sales;
+
+LET vMinDate = Num(Peek('MinDate', 0, 'CalendarRange'));
+LET vMaxDate = Num(Peek('MaxDate', 0, 'CalendarRange'));
+
+DROP TABLE CalendarRange;
+
+
+// Build the master calendar
+MasterCalendar:
+LOAD
+    Date($(vMinDate) + IterNo() - 1) AS OrderDate,
+    Year($(vMinDate) + IterNo() - 1) AS Year,
+    Month($(vMinDate) + IterNo() - 1) AS Month,
+    Date(MonthStart($(vMinDate) + IterNo() - 1), 'MMM YYYY') AS MonthYear,
+    'Q' & Ceil(Month($(vMinDate) + IterNo() - 1) / 3) AS Quarter,
+    Week($(vMinDate) + IterNo() - 1) AS Week,
+    WeekDay($(vMinDate) + IterNo() - 1) AS WeekDay
+AUTOGENERATE 1
+WHILE $(vMinDate) + IterNo() - 1 <= $(vMaxDate);
+
+LET vMinDate =;
+LET vMaxDate =;
 
