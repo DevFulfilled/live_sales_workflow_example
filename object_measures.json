@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "expression": null,
+        "is_master_item": true,
+        "label": null,
+        "library_id": "tTNg",
+        "measure_index": 0,
+        "object_id": "LpWhV",
+        "object_title": "",
+        "object_type": "auto-chart"
+    },
+    {
+        "expression": null,
+        "is_master_item": true,
+        "label": null,
+        "library_id": "WDCa",
+        "measure_index": 0,
+        "object_id": "cxhVBm",
+        "object_title": "",
+        "object_type": "auto-chart"
+    },
+    {
+        "expression": null,
+        "is_master_item": true,
+        "label": null,
+        "library_id": "tTNg",
+        "measure_index": 0,
+        "object_id": "YgWpzjv",
+        "object_title": "",
+        "object_type": "sn-table"
+    },
+    {
+        "expression": null,
+        "is_master_item": true,
+        "label": null,
+        "library_id": "WDCa",
+        "measure_index": 1,
+        "object_id": "YgWpzjv",
+        "object_title": "",
+        "object_type": "sn-table"
+    }
+]
