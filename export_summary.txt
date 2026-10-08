@@ -3,7 +3,7 @@ DEVFULFILLED METADATA EXPORT
 
 Project: 
 Exported By: Richard J Pearce
-Exported At: 2026-10-08 13:28:42
+Exported At: 2026-10-08 14:02:59
 
 FILES EXPORTED
 ==============
@@ -18,3 +18,14 @@ master_visualisations.txt
 variables.txt
 object_measures.json
 object_dimensions.json
+deep-scan/objects/LpWhV.json
+deep-scan/objects/cxhVBm.json
+deep-scan/objects/fWSxbHA.json
+deep-scan/objects/mPXAp.json
+deep-scan/objects/31b82b2a-eda2-4e98-b616-9d1ca32da98c.json
+deep-scan/objects/43c5907a-28df-4463-a9b2-caa9ffb15984.json
+deep-scan/objects/a5c5c620-2878-48c5-8f5b-b713ccce462b.json
+deep-scan/objects/b0eba877-a46e-41b2-b851-9f1586aefd01.json
+deep-scan/objects/b2b4a84b-5837-4350-bb75-e7321a9a896e.json
+deep-scan/objects/cQaUX.json
+deep-scan/objects/YgWpzjv.json
