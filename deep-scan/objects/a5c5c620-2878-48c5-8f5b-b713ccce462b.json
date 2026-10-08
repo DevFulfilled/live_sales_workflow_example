@@ -1,0 +1,54 @@
+{
+    "object_id": "a5c5c620-2878-48c5-8f5b-b713ccce462b",
+    "object_type": "listbox",
+    "properties": {
+        "disableNavMenu": false,
+        "footnote": "",
+        "qInfo": {
+            "qId": "a5c5c620-2878-48c5-8f5b-b713ccce462b",
+            "qType": "listbox"
+        },
+        "qListObjectDef": {
+            "disableNavMenu": false,
+            "footnote": "",
+            "qDef": {
+                "autoSort": true,
+                "cId": "kvmLmN",
+                "qActiveField": 0,
+                "qFieldDefs": [
+                    "MonthYear"
+                ],
+                "qFieldLabels": [
+                    ""
+                ],
+                "qGrouping": "N",
+                "qNumberPresentations": [],
+                "qSortCriterias": [
+                    {
+                        "qExpression": [],
+                        "qSortByAscii": 1,
+                        "qSortByLoadOrder": 1,
+                        "qSortByNumeric": 1,
+                        "qSortByState": 1
+                    }
+                ]
+            },
+            "qExpressions": [],
+            "qFrequencyMode": "N",
+            "qInitialDataFetch": [],
+            "qOtherTotalSpec": [],
+            "qShowAlternatives": true,
+            "showDetails": true,
+            "showDetailsExpression": false,
+            "showTitles": true,
+            "subtitle": "",
+            "title": ""
+        },
+        "qMetaDef": [],
+        "showDetails": true,
+        "showDetailsExpression": false,
+        "showTitles": true,
+        "subtitle": "",
+        "visualization": "listbox"
+    }
+}
