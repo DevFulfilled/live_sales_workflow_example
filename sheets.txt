@@ -1,5 +1,22 @@
 SHEETS
 ======
 
-No sheets returned.
+My new sheet
+------------
+
+ID: WpwtB
+Type: sheet
+Rank: 0
+Published: No
+Approved: No
+Publish Time: 
+Created Date: 2026-10-08T13:44:30.626Z
+Modified Date: 2026-10-08T13:46:40.915Z
+Owner: auth0|a08D000000d9u66IAA
+Owner id: 67e51c6122ab2f9b5e701b31
+Thumbnail: {
+    "qStaticContentUrl": []
+}
+
+--------------------------------------------------------------------------------
 
