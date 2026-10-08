@@ -54,12 +54,12 @@ description: Demo showing release management value add from DevFulfilled
 encrypted: Yes
 hassectionaccess: No
 id: e9ab7c20-e620-428c-996f-0e74c178db07
-modifiedDate: 2026-10-08T13:08:31.709Z
+modifiedDate: 2026-10-08T13:18:09.229Z
 originAppId: 7c7012b2-0259-4358-ad83-9cc2145849ad
 owner: auth0|a08D000000d9u66IAA
 ownerId: 67e51c6122ab2f9b5e701b31
 privileges: read, update, delete, reload, export, change_owner, change_space, export_reduced, source, evaluate, manage, publish_source
-publishTime: 2026-10-08T13:08:31.646Z
+publishTime: 2026-10-08T13:18:09.167Z
 published: No
 qUsage: ANALYTICS
 spaceId: 6a2ea62d58a46856e9700cc6
