@@ -1,0 +1,40 @@
+{
+    "object_id": "cQaUX",
+    "object_type": "listbox",
+    "properties": {
+        "qInfo": {
+            "qId": "cQaUX",
+            "qType": "listbox"
+        },
+        "qListObjectDef": {
+            "qDef": {
+                "autoSort": true,
+                "qActiveField": 0,
+                "qFieldDefs": [
+                    "Segment"
+                ],
+                "qFieldLabels": [
+                    "Segment"
+                ],
+                "qGrouping": "N",
+                "qNumberPresentations": [],
+                "qSortCriterias": [
+                    {
+                        "qExpression": [],
+                        "qSortByAscii": 1,
+                        "qSortByLoadOrder": 1,
+                        "qSortByNumeric": 1,
+                        "qSortByState": 1
+                    }
+                ]
+            },
+            "qExpressions": [],
+            "qFrequencyMode": "N",
+            "qInitialDataFetch": [],
+            "qShowAlternatives": true
+        },
+        "qMetaDef": [],
+        "title": "Segment",
+        "visualization": "listbox"
+    }
+}
