@@ -23,6 +23,14 @@ SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
 SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
 
 SET vDataPath = 'lib://Data:DataFiles';
+SET vCustomersFile = 'Customers(1).csv';
+SET vProductsFile  = 'Products(1).csv';
+SET vSalesFile     = 'Sales(1).csv';
+
+
+SET HidePrefix='%';
+
+
 
 Customers:
 LOAD
@@ -33,7 +41,7 @@ LOAD
     Region,
     Country,
     Date(Date#(CustomerSince, 'YYYY-MM-DD')) as CustomerSince
-FROM [$(vDataPath)/Customers(1).csv]
+FROM [$(vDataPath)/$(vCustomersFile)]
 (txt, utf8, embedded labels, delimiter is ',', msq);
 
 
@@ -45,7 +53,7 @@ LOAD
     Subcategory,
     UnitCost,
     UnitPrice
-FROM [$(vDataPath)/Products(1).csv]
+FROM [$(vDataPath)/$(vProductsFile)]
 (txt, utf8, embedded labels, delimiter is ',', msq);
 
 
@@ -62,6 +70,6 @@ LOAD
     SalesAmount,
     CostAmount,
     Profit
-FROM [$(vDataPath)/Sales(1).csv]
+FROM [$(vDataPath)/$(vSalesFile)]
 (txt, utf8, embedded labels, delimiter is ',', msq);
 
