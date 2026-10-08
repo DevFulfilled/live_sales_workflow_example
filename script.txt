@@ -44,11 +44,10 @@ FROM [lib://Data:DataFiles/Products(1).csv]
 (txt, utf8, embedded labels, delimiter is ',', msq);
 
 LOAD
-    SaleID,
-    OrderID,
-    OrderDate,
-    CustomerID,
-    ProductID,
+    SaleID as %SaleID,
+    OrderID as %OrderID,
+    CustomerID as %CustomerID,
+    ProductID as %ProductID,
     Channel,
     Quantity,
     DiscountPct,
